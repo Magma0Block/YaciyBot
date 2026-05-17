@@ -26,5 +26,6 @@ beelist = ["Do you love the bees? DO YOU??",
            "Uh oh, prepare urself",
            "The Bees Supremacy!",
            "Hey, wanna start nocrops run?",
-           "Hey, wanna start norocket run?"
+           "Hey, wanna start norocket run?",
+           "https://tenor.com/view/explosive-couch-explosion-l-bozo-gif-25612086"
            ]
