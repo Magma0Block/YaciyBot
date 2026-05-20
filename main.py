@@ -4,6 +4,7 @@ import random
 
 import Token
 import bees
+import rugen
 
 description = """An example bot to showcase the discord.ext.commands extension
 module.
@@ -66,6 +67,22 @@ async def bаn(ctx):
 async def bam(ctx):
     await ctx.send("*bonk*")
 
+@bot.command()
+async def руген(ctx):
+    roll = random.randint(0, len(rugen.rugen_cring_list)-1)
+    await ctx.send(rugen.rugen_cring_list[roll])
+
+@bot.command()
+async def аутизм(ctx):
+    await ctx.send("https://media.discordapp.net/attachments/289850721988509696/1423471665949442099/New_Project.gif?ex=6a0a61cb&is=6a09104b&hm=1fee9dc1636877a20feb22d1d74b78419c88df49e81e8c376c0c2d0fb56d059e&")
+
+@bot.command()
+async def daily(ctx):
+    await ctx.send("Ебани бургеры, вот норм дейли, все остальное шлак:\nhttps://github.com/GTNewHorizons/DreamAssemblerXXL/actions/runs/25657680798/artifacts/6913195412")
+
+@bot.command()
+async def essentia(ctx):
+    await ctx.send("Essentia sources: [click here](https://docs.google.com/spreadsheets/d/1s0jNPH-MVP4LKIP1fBZto-JCqcbeLSmDoCQBft4wKfA/edit?gid=0#gid=0)\nEssentia effective ways: [click here](https://docs.google.com/spreadsheets/d/1Llvu91Vmn4RcCE__lKV8p_MIR9tiaV2URGbkombvlkE/edit?usp=sharing)")
 
 
 bot.run(Token.token)
